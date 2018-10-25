@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pais>
+    <nome>Brasil</nome>
+    <idioma>Português</idioma>
+    <capital>Brasília</capital>
+    <moeda>Novo Real (NR$)</moeda>
+    <prefixo>+55</prefixo>
+    <geografia>
+        <clima>Temperado</clima>
+        <costa>7367 km</costa>
+        <pico>Neblina (3014 m)</pico>
+    </geografia>
+    <estados>
+        <nome>Pará</nome>
+        <nome>Rio de Janeiro</nome>
+        <nome>Rio Grande do Sul</nome>
+        <nome>São Paulo</nome>
+        <nome>Ceará</nome>
+    </estados>
+</pais>
