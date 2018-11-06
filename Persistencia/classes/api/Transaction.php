@@ -3,6 +3,8 @@
 final class Transaction {
 
     private static $conn; // Conexão ativa
+    private static $logger; // objeto de log
+
     private function __construct(){}
 
     public static function open($database)
@@ -10,6 +12,7 @@ final class Transaction {
         if (empty(self::$conn)) {
             self::$conn = Connection::open($database);
             self::$conn->beginTransaction(); // Inicia a transação
+            self::$logger = NULL; // Desliga o log de SQL
         }
     }
 
@@ -31,6 +34,18 @@ final class Transaction {
         if (self::$conn) {
             self::$conn->commit(); // Aplica as operações realizadas
             self::$conn = NULL;
+        }
+    }
+
+    public static function setLogger(Logger $logger)
+    {
+        self::$logger = $logger;
+    }
+
+    public static function log($message)
+    {
+        if (self::$logger) {
+            self::$logger->write($message);
         }
     }
 }
