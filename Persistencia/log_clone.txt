@@ -1,0 +1,4 @@
+2018-11-07 10:15:34 :: Clonando um produto!
+2018-11-07 10:15:34 :: SELECT * FROM produto WHERE id=2
+2018-11-07 10:15:34 :: SELECT max(id) FROM produto
+2018-11-07 10:15:34 :: INSERT INTO produto(descricao, estoque, preco_custo, preco_venda, codigo_barras, data_cadastro, origem ) values ('Cerveja artesanal PA (clonado)', '50', '8', '12', '75363453234234', '2018-11-07', 'N')

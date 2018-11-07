@@ -1,0 +1,2 @@
+2018-11-07 09:48:55 :: Buscando um Produto
+2018-11-07 09:48:55 :: SELECT * FROM produto WHERE id=1

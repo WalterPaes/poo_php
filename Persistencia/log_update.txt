@@ -1,0 +1,4 @@
+2018-11-07 10:05:00 :: Alterando um produto!
+2018-11-07 10:05:00 :: SELECT * FROM produto WHERE id=2
+2018-11-07 10:05:00 :: SELECT * FROM produto WHERE id=2
+2018-11-07 10:05:00 :: UPDATE produto SET descricao = 'Café torrado e moído brasileiro', estoque = 110, preco_custo = '4', preco_venda = '7', codigo_barras = '34963045930455', data_cadastro = '2018-11-04', origem = 'N' WHERE id=2

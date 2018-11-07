@@ -1,5 +1,3 @@
-2018-11-05 21:50:06 :: Inserindo produto novo
-2018-11-05 21:50:06 :: SELECT max(id) as max FROM produto
-2018-11-05 21:50:06 :: INSERT INTO produto (id, descricao, estoque, preco_custo, preco_venda, codigo_barras, data_cadastro, origem)
-                    VALUES ('4', 'Chocolate Amargo', '80', '4', '7', '68323453234234', '2018-11-05', 'N')
-            
+2018-11-07 09:41:17 :: Inserindo produto novo!
+2018-11-07 09:41:17 :: SELECT max(id) FROM produto
+2018-11-07 09:41:17 :: INSERT INTO produto(descricao, estoque, preco_custo, preco_venda, codigo_barras, data_cadastro, origem ) values ('Cerveja artesanal PA', 50, 8, 12, '75363453234234', '2018-11-07', 'N')
