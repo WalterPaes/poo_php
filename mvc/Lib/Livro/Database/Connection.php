@@ -1,13 +1,18 @@
 <?php
 
+namespace Livro\Database;
+
+use PDO;
+use Exception;
+
 final class Connection {
     private function __construct(){}
 
     public static function open($name){
         
         // Verifica se existe arquivo de configuração para este DB
-        if (file_exists("config/{$name}.ini")) {
-            $db = parse_ini_file("config/{$name}.ini");
+        if (file_exists("App/Config/{$name}.ini")) {
+            $db = parse_ini_file("App/Config/{$name}.ini");
         } else {
             throw new Exception("Arquivo '$name' não encontrado!");
         }
