@@ -13,8 +13,8 @@ $al->addDirectory('App/Control');
 $al->addDirectory('App/Model');
 $al->register();
 
-//$loader = require 'vendor/autoload.php';
-//$loader->register();
+$loader = require 'vendor/autoload.php';
+$loader->register();
 
 if ($_GET) {
     $class = $_GET['class'];
